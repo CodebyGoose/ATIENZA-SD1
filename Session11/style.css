@@ -1,0 +1,152 @@
+* {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pink Color Palette */
+:root {
+    --pink-primary: #ff69b4;
+    --pink-light: #ffb6d9;
+    --pink-lighter: #ffd4e5;
+    --pink-dark: #d946a6;
+    --pink-very-light: #fff0f6;
+    --accent-gold: #ffd700;
+    --accent-purple: #9d4edd;
+}
+
+/* Text Colors */
+.text-pink {
+    color: var(--pink-primary) !important;
+}
+
+/* Background Colors */
+.bg-navbar {
+    background: linear-gradient(135deg, #fff0f6 0%, #ffd4e5 100%) !important;
+    border-bottom: 5px solid var(--pink-primary) !important;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2) !important;
+}
+
+.bg-profile {
+    background: linear-gradient(135deg, #d946a6 0%, #ff69b4 50%, #ff85c0 100%) !important;
+}
+
+.bg-light-pink {
+    background-color: var(--pink-very-light) !important;
+}
+
+.bg-pink {
+    background-color: var(--pink-primary) !important;
+}
+
+.bg-pink-light {
+    background-color: var(--pink-light) !important;
+}
+
+.bg-pink-dark {
+    background-color: var(--pink-dark) !important;
+}
+
+.bg-section-dark {
+    background: linear-gradient(135deg, #2d1b3d 0%, #3d2a4d 100%) !important;
+}
+
+.bg-gallery {
+    background: linear-gradient(135deg, #fff0f6 0%, #ffd4e5 100%) !important;
+}
+
+/* Border Colors */
+.border-pink {
+    border-color: var(--pink-primary) !important;
+}
+
+.borderbottom {
+    border-bottom: 5px solid var(--pink-primary) !important;
+}
+
+/* Font Styling */
+.mainfont {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size: xx-large;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 300px;
+    height: 300px; /* ensure a true circle */
+    border-radius: 50%;
+    object-fit: cover; /* remove letterboxing */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Navbar */
+.navbar {
+    font-weight: 500;
+    position: relative;
+}
+
+/* Uniform Image */
+.uniform-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Recognition Cards */
+#recognition-1, #recognition-2, #recognition-3 {
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: auto; /* make interactions simple */
+}
+
+/* General Enhancements */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff0f6 0%, #ffffff 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 200px;
+    }
+    
+    .uniform-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .mainfont {
+        font-size: x-large;
+    }
+    
+    .d-flex.flex-wrap {
+        flex-direction: column;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
