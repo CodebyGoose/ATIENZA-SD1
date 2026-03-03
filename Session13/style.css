@@ -1,0 +1,67 @@
+  body {
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+            font-family: 'Lora', serif;
+            color: #3d3d3d;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #5a4a42;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #5a4a42 !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        #about {
+            background: rgba(255, 255, 255, 0.7);
+            border: 3px solid #8b7355;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 40px 20px;
+        }
+
+        .text-muted {
+            color: #7a6f6a !important;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem !important;
+            letter-spacing: 2px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #5a4a42 0%, #3d3d3d 100%) !important;
+            font-family: 'Lora', serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            width: 100%;
+            padding: 1.5rem 1rem !important;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 1rem 0.5rem !important;
+            }
+
+            footer p {
+                font-size: 0.875rem;
+            }
+        }
