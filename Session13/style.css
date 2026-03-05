@@ -1,10 +1,18 @@
   body {
             background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
             font-family: 'Lora', serif;
-            color: #3d3d3d;
+            color: #523a3a;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
+            transition: background 0.5s ease, color 0.3s ease;
+            min-height: 100vh;
+        }
+
+        /* Simple Dark Mode */
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e8e8e8;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -14,6 +22,16 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
+            transition: color 0.3s ease;
+        }
+
+        body.dark-mode h1, 
+        body.dark-mode h2, 
+        body.dark-mode h3, 
+        body.dark-mode h4, 
+        body.dark-mode h5, 
+        body.dark-mode h6 {
+            color: #00d4ff;
         }
 
         .navbar-brand {
@@ -30,6 +48,38 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             padding: 40px 20px;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        body.dark-mode #about {
+            background: rgba(22, 33, 62, 0.8);
+            border: 3px solid #00d4ff;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        body.dark-mode #about p {
+            color: #e8e8e8 !important;
+        }
+
+        body.dark-mode #about h5 {
+            color: #00d4ff !important;
+        }
+
+        body.dark-mode #about ul {
+            color: #a8c5e0 !important;
+        }
+
+        body.dark-mode #about li {
+            color: #a8c5e0 !important;
+        }
+
+        body.dark-mode #about li strong {
+            color: #00d4ff;
+        }
+
+        body.dark-mode div[style*="background: rgba(255, 255, 255, 0.4)"] {
+            background: rgba(15, 52, 96, 0.6) !important;
+            border-left-color: #00d4ff !important;
         }
 
         .text-muted {
@@ -39,6 +89,11 @@
             letter-spacing: 2px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            transition: color 0.3s ease;
+        }
+
+        body.dark-mode .text-muted {
+            color: #a8c5e0 !important;
         }
 
         footer {
@@ -64,4 +119,205 @@
             footer p {
                 font-size: 0.875rem;
             }
+        }
+
+        /* Dark Mode - Cards and Sections */
+        body.dark-mode .card {
+            background: rgba(22, 33, 62, 0.8) !important;
+            border-color: #00d4ff !important;
+            box-shadow: 0 4px 12px rgba(0, 212, 255, 0.15) !important;
+        }
+
+        body.dark-mode .card-title,
+        body.dark-mode .card-text {
+            color: #e8e8e8 !important;
+        }
+
+        body.dark-mode section > .container > div {
+            background: rgba(22, 33, 62, 0.8) !important;
+            border-color: #00d4ff !important;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2) !important;
+        }
+
+        body.dark-mode section > .container > div > div:first-child {
+            background: rgba(15, 52, 96, 0.6) !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode .col > div {
+            background: rgba(22, 33, 62, 0.7) !important;
+            border-color: #00d4ff !important;
+            box-shadow: 0 4px 12px rgba(0, 212, 255, 0.15) !important;
+        }
+
+        body.dark-mode .col > div p {
+            color: #e8e8e8 !important;
+        }
+
+        #themeToggle {
+            transition: all 0.3s ease;
+        }
+
+        #themeToggle:hover {
+            transform: scale(1.1);
+        }
+
+        body.dark-mode #themeToggle {
+            border-color: #00d4ff !important;
+            color: #00d4ff !important;
+        }
+
+        /* Dark Mode - Contact Form */
+        body.dark-mode #contact {
+            background: transparent;
+        }
+
+        body.dark-mode #contact > .container > div {
+            background: rgba(22, 33, 62, 0.8) !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode #contact > .container > div > div:first-child {
+            background: rgba(15, 52, 96, 0.6) !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode #contact > .container > div > div:last-child {
+            background: rgba(22, 33, 62, 0.8) !important;
+        }
+
+        body.dark-mode #contact label {
+            color: #00d4ff !important;
+        }
+
+        body.dark-mode .form-control {
+            background: rgba(15, 52, 96, 0.5) !important;
+            border: 2px solid #00d4ff !important;
+            color: #e8e8e8 !important;
+        }
+
+        body.dark-mode .form-control::placeholder {
+            color: #a8c5e0 !important;
+        }
+
+        body.dark-mode .form-control:focus {
+            background: rgba(15, 52, 96, 0.7) !important;
+            border-color: #00d4ff !important;
+            color: #e8e8e8 !important;
+            box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
+        }
+
+        body.dark-mode button[type="submit"] {
+            background-color: #00d4ff !important;
+            color: #1a1a2e !important;
+            border: 2px solid #00d4ff !important;
+        }
+
+        body.dark-mode button[type="submit"]:hover {
+            background-color: rgba(0, 212, 255, 0.8) !important;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+        }
+
+        button[type="submit"]:hover {
+            background-color: #a5876b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(139, 115, 85, 0.3);
+        }
+
+        /* Modal Styling */
+        .modal-backdrop {
+            opacity: 0.5;
+        }
+
+        #contactBtn {
+            transition: all 0.3s ease;
+        }
+
+        #contactBtn:hover {
+            background-color: #a5876b !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(139, 115, 85, 0.3);
+        }
+
+        /* Dark Mode - Modal */
+        body.dark-mode .modal-content {
+            background: rgba(22, 33, 62, 0.95) !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode .modal-header {
+            background: rgba(15, 52, 96, 0.6) !important;
+            border-bottom-color: #00d4ff !important;
+        }
+
+        body.dark-mode .modal-title {
+            color: #00d4ff !important;
+        }
+
+        body.dark-mode .modal-body {
+            background: rgba(22, 33, 62, 0.95) !important;
+        }
+
+        body.dark-mode .modal-body label {
+            color: #00d4ff !important;
+        }
+
+        body.dark-mode .modal-footer {
+            border-top-color: #00d4ff !important;
+            background: rgba(22, 33, 62, 0.95) !important;
+        }
+
+        body.dark-mode #contactBtn {
+            background-color: #00d4ff !important;
+            color: #1a1a2e !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode #contactBtn:hover {
+            background-color: rgba(0, 212, 255, 0.8) !important;
+            box-shadow: 0 6px 15px rgba(0, 212, 255, 0.3) !important;
+        }
+
+        body.dark-mode #submitBtn {
+            background-color: #00d4ff !important;
+            color: #1a1a2e !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode #submitBtn:hover {
+            background-color: rgba(0, 212, 255, 0.8) !important;
+            box-shadow: 0 6px 15px rgba(0, 212, 255, 0.3) !important;
+        }
+
+        /* Dark Mode - Success Modal */
+        body.dark-mode #successModal .modal-content {
+            background: rgba(22, 33, 62, 0.95) !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode #successModal .modal-title {
+            color: #00d4ff !important;
+        }
+
+        body.dark-mode #successModal p {
+            color: #a8c5e0 !important;
+        }
+
+        body.dark-mode #successModal .modal-header {
+            border: none;
+        }
+
+        body.dark-mode #closeSuccessBtn {
+            background-color: #00d4ff !important;
+            color: #1a1a2e !important;
+            border-color: #00d4ff !important;
+        }
+
+        body.dark-mode #closeSuccessBtn:hover {
+            background-color: rgba(0, 212, 255, 0.8) !important;
+            box-shadow: 0 6px 15px rgba(0, 212, 255, 0.3) !important;
+        }
+
+        body.dark-mode #successModal .modal-header div {
+            color: #00d4ff;
         }

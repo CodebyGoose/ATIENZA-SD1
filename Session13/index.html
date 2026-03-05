@@ -31,6 +31,9 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <button id="themeToggle" class="btn btn-outline-secondary ms-2" style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">
+                    <span id="themeIcon">🌙</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -42,8 +45,23 @@
                 <img src="https://i.natgeofe.com/k/ca3583f8-c836-4826-9d14-b5e2e5d9a769/Ada_Lovelace_Portrait_KIDS_Women-Heroes_02-21_2x3.jpg" alt="Ada Lovelace" class="img-fluid rounded-5 mb-3" style="width: 350px; height: 500px; object-fit: cover; border: 4px solid #8b7355; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
                 <h1 class="mb-2">Augusta Ada King-Noel, Countess of Lovelace</h1>
                 <hr style="border: 2px solid #333; opacity: 1; width: 50%;" class="mb-3">
-                <p class="text-muted fs-5 mb-3 fw-bold ">Software Engineer</p>
-                <p class="text-start">I am a dedicated developer with expertise in HTML, CSS, Bootstrap, and JavaScript. I love creating responsive and user-friendly web applications. My focus is on building clean, maintainable code and delivering exceptional user experiences.</p>
+                <p class="text-muted fs-5 mb-3 fw-bold ">Mathematician & First Computer Programmer</p>
+                <p class="text-start" style="font-family: 'Lora', serif; color: #523a3a; line-height: 1.8;">
+                    Ada Lovelace (1815–1852) was an English mathematician and writer, widely recognized as the world's first computer programmer for her work on Charles Babbage's Analytical Engine. Daughter of poet Lord Byron, she uniquely blended logic and imagination to foresee that computers could do more than calculations.
+                </p>
+                <div style="background: rgba(255, 255, 255, 0.4); padding: 20px; border-radius: 10px; border-left: 4px solid #8b7355; margin: 20px 0;">
+                    <h5 style="color: #5a4a42; font-family: 'Playfair Display', serif; margin-bottom: 15px;">Key Details:</h5>
+                    <ul style="color: #523a3a; font-family: 'Lora', serif; line-height: 1.8; margin-bottom: 0;">
+                        <li><strong>Birth:</strong> Born Augusta Ada Byron on December 10, 1815, in London.</li>
+                        <li><strong>Parents:</strong> Daughter of the famed poet Lord Byron and Lady Byron (Anne Isabella Milbanke).</li>
+                        <li><strong>Education:</strong> Educated in mathematics and science by private tutors, encouraged by her mother to pursue logic and science.</li>
+                        <li><strong>The Analytical Engine:</strong> At age 17, she met Charles Babbage and became fascinated with his revolutionary machine.</li>
+                        <li><strong>First Program:</strong> In 1843, she translated an article on the machine and added extensive notes including an algorithm to calculate Bernoulli numbers—the first published computer program.</li>
+                        <li><strong>Philosophy:</strong> She described her approach as "poetical science," merging mathematical skills with creative imagination.</li>
+                        <li><strong>Marriage:</strong> Married William King in 1835, who became the Earl of Lovelace in 1838, making her the Countess of Lovelace. They had three children: Byron, Annabella, and Ralph.</li>
+                        <li><strong>Legacy:</strong> Died of cancer on November 27, 1852, at age 36. The Ada programming language was named after her, and Ada Lovelace Day is celebrated annually to honor women in STEM.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 <!-- About End -->
@@ -53,14 +71,16 @@
     <div class="container mt-5">
         <div style="background: rgba(255, 255, 255, 0.7); border: 3px solid #8b7355; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
             <div style="background: rgba(139, 115, 85, 0.1); border-bottom: 3px solid #8b7355; padding: 30px 40px; border-radius: 12px 12px 0 0;">
-                <h2 style="color: #5a4a42; font-family: 'Playfair Display', serif; margin: 0;">My Projects</h2>
+                <h2 style="color: #5a4a42; font-family: 'Playfair Display', serif; margin: 0;">Her Projects</h2>
             </div>
             <div style="padding: 40px 40px;">
                 <hr style="border: 2px solid #8b7355; opacity: 0.5; width: 30%; margin: 0 auto 30px auto;">
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card" style="border: 2px solid #8b7355; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow: hidden;">
-                            <img src="https://c02.purpledshub.com/uploads/sites/41/2018/08/47-Magdalen-College-Libraries-and-Archives-Daubeny-90.A.11-fc247cf.jpg?webp=1&w=1200" class="card-img-top" alt="Project 1" style="height: 250px; object-fit: cover;">
+                            <div style="height: 280px; overflow: hidden; background: #f0f0f0;">
+                                <img src="https://c02.purpledshub.com/uploads/sites/41/2018/08/47-Magdalen-College-Libraries-and-Archives-Daubeny-90.A.11-fc247cf.jpg?webp=1&w=1200" class="card-img-top" alt="Note G" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title" style="color: #5a4a42; font-family: 'Playfair Display', serif;">Note G</h5>
                                 <p class="card-text" style="color: #3d3d3d; font-family: 'Lora', serif;">Ada Lovelace's "Note G" is recognized as the first published computer program, written in 1843 for Charles Babbage's Analytical Engine to calculate Bernoulli numbers.</p>
@@ -69,10 +89,34 @@
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="card" style="border: 2px solid #8b7355; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow: hidden;">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNT4dAM3JQLDLxoqbRUcGGzgYtVUXPCbVkPQ&s" class="card-img-top" alt="Project 2" style="height: 250px; object-fit: cover;">
+                            <div style="height: 280px; overflow: hidden; background: #f0f0f0;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNT4dAM3JQLDLxoqbRUcGGzgYtVUXPCbVkPQ&s" class="card-img-top" alt="The Analytical Engine" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title" style="color: #5a4a42; font-family: 'Playfair Display', serif;">The Analytical Engine</h5>
                                 <p class="card-text" style="color: #3d3d3d; font-family: 'Lora', serif;">Ada Lovelace's visionary work on the Analytical Engine laid the foundation for modern computing. She described how it could be programmed to perform complex calculations, making her the first computer programmer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="border: 2px solid #8b7355; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow: hidden;">
+                            <div style="height: 280px; overflow: hidden; background: #f0f0f0;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/800px-Ada_Lovelace_portrait.jpg" class="card-img-top" alt="Vision Beyond Numbers" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #5a4a42; font-family: 'Playfair Display', serif;">Vision Beyond Numbers</h5>
+                                <p class="card-text" style="color: #3d3d3d; font-family: 'Lora', serif;">Ada foresaw that computers could go beyond mere number-crunching. She envisioned machines composing music, producing graphics, and being used for practical and scientific purposes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="border: 2px solid #8b7355; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow: hidden;">
+                            <div style="height: 280px; overflow: hidden; background: #f0f0f0;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5TljjIi9u3Hb-zHkJidcIW_e0PHiyLv8cA&s" class="card-img-top" alt="The Ada Programming Language" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #5a4a42; font-family: 'Playfair Display', serif;">The Ada Programming Language</h5>
+                                <p class="card-text" style="color: #3d3d3d; font-family: 'Lora', serif;">In 1980, the U.S. Department of Defense named a programming language "Ada" in her honor, recognizing her pioneering contributions to computer science and algorithmic thinking.</p>
                             </div>
                         </div>
                     </div>
@@ -82,8 +126,213 @@
     </div>
 </section>
 <!-- Project End -->
+
+<!-- Tools Start -->
+<section id="tools" class="mt-5 mb-5">
+    <div class="container mt-5">
+        <div style="background: rgba(255, 255, 255, 0.7); border: 3px solid #8b7355; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
+            <div style="background: rgba(139, 115, 85, 0.1); border-bottom: 3px solid #8b7355; padding: 30px 40px; border-radius: 12px 12px 0 0;">
+                <h2 style="color: #5a4a42; font-family: 'Playfair Display', serif; margin: 0;">Tools I Use</h2>
+            </div>
+            <div style="padding: 40px 40px;">
+                <hr style="border: 2px solid #8b7355; opacity: 0.5; width: 30%; margin: 0 auto 30px auto;">
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">HTML</p>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">CSS</p>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">Java</p>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">Python</p>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">C++</p>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div style="border: 2px solid #8b7355; border-radius: 10px; padding: 20px 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: rgba(255,255,255,0.5);">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" style="width: 50px; height: 50px;">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-top: 10px; margin-bottom: 0; font-weight: 600;">C#</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tools End -->
     </div>
 
+    <!-- Contact Start -->
+    <section id="contact" class="mt-5 mb-5">
+        <div class="container mt-5">
+            <div style="background: rgba(255, 255, 255, 0.7); border: 3px solid #8b7355; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
+                <div style="background: rgba(139, 115, 85, 0.1); border-bottom: 3px solid #8b7355; padding: 30px 40px; border-radius: 12px 12px 0 0;">
+                    <h2 style="color: #5a4a42; font-family: 'Playfair Display', serif; margin: 0;">Contact Me</h2>
+                </div>
+                <div style="padding: 40px 40px;">
+                    <hr style="border: 2px solid #8b7355; opacity: 0.5; width: 30%; margin: 0 auto 30px auto;">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center">
+                            <p style="color: #5a4a42; font-family: 'Lora', serif; margin-bottom: 25px; font-size: 1.1rem;">Get in touch with me! Fill out the form below to send a message.</p>
+                            <button type="button" class="btn" id="contactBtn" style="background-color: #8b7355; color: white; border: 2px solid #8b7355; border-radius: 8px; padding: 12px 30px; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Open Contact Form
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border: 2px solid #8b7355; border-radius: 15px;background: rgba(255, 255, 255, 0.95);">
+                <div class="modal-header" style="border-bottom: 2px solid #8b7355; background: rgba(139, 115, 85, 0.1); padding: 20px;">
+                    <h1 class="modal-title fs-5" id="contactModalLabel" style="color: #5a4a42; font-family: 'Playfair Display', serif; font-weight: 600;">Send Me a Message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 30px;">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="modalName" style="color: #5a4a42; font-family: 'Playfair Display', serif; font-weight: 600;">Full Name</label>
+                            <input type="text" class="form-control" id="modalName" placeholder="Your Name" style="border: 2px solid #8b7355; border-radius: 8px; padding: 10px 15px; font-family: 'Lora', serif;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalEmail" style="color: #5a4a42; font-family: 'Playfair Display', serif; font-weight: 600;">Email Address</label>
+                            <input type="email" class="form-control" id="modalEmail" placeholder="your.email@example.com" style="border: 2px solid #8b7355; border-radius: 8px; padding: 10px 15px; font-family: 'Lora', serif;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalSubject" style="color: #5a4a42; font-family: 'Playfair Display', serif; font-weight: 600;">Subject</label>
+                            <input type="text" class="form-control" id="modalSubject" placeholder="Message Subject" style="border: 2px solid #8b7355; border-radius: 8px; padding: 10px 15px; font-family: 'Lora', serif;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalMessage" style="color: #5a4a42; font-family: 'Playfair Display', serif; font-weight: 600;">Message</label>
+                            <textarea class="form-control" id="modalMessage" rows="4" placeholder="Your message here..." style="border: 2px solid #8b7355; border-radius: 8px; padding: 10px 15px; font-family: 'Lora', serif;"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="border-top: 2px solid #8b7355; padding: 20px;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #999; border: 2px solid #999; border-radius: 8px; font-family: 'Playfair Display', serif; font-weight: 600;">Close</button>
+                    <button type="button" class="btn" id="submitBtn" style="background-color: #8b7355; color: white; border: 2px solid #8b7355; border-radius: 8px; font-family: 'Playfair Display', serif; font-weight: 600;">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Modal End -->
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border: 2px solid #8b7355; border-radius: 15px; background: rgba(255, 255, 255, 0.95); text-align: center; padding: 30px 20px;">
+                <div class="modal-header" style="border: none; justify-content: center; padding: 0 0 20px 0;">
+                    <div style="font-size: 3rem;">✓</div>
+                </div>
+                <div class="modal-body" style="padding: 0;">
+                    <h1 class="modal-title fs-5" id="successModalLabel" style="color: #5a4a42; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 1.8rem; margin-bottom: 15px;">Message Sent!</h1>
+                    <p style="color: #523a3a; font-family: 'Lora', serif; margin-bottom: 0; line-height: 1.6;">
+                        Thank you for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible.
+                    </p>
+                </div>
+                <div class="modal-footer" style="border: none; justify-content: center; padding: 20px 0 0 0;">
+                    <button type="button" class="btn" id="closeSuccessBtn" data-bs-dismiss="modal" style="background-color: #8b7355; color: white; border: 2px solid #8b7355; border-radius: 8px; padding: 10px 30px; font-family: 'Playfair Display', serif; font-weight: 600;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Success Modal End -->
+
+    <!-- Footer -->
+    <footer style="background: linear-gradient(135deg, #5a4a42 0%, #3d3d3d 100%); color: #f5e6d3; font-family: 'Lora', serif; width: 100%; padding: 1.5rem 1rem; margin-top: 3rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+        <div class="container text-center">
+            <p style="margin-bottom: 0; font-size: clamp(0.875rem, 2vw, 1rem);">&copy; 2026 Atienza. All rights reserved.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Crafted with passion for the art of code</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+        const submitBtn = document.getElementById('submitBtn');
+        const contactForm = document.getElementById('contactForm');
+        const contactModal = document.getElementById('contactModal');
+        const successModal = document.getElementById('successModal');
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeIcon.textContent = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Handle form submission
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('modalName').value;
+            const email = document.getElementById('modalEmail').value;
+            const subject = document.getElementById('modalSubject').value;
+            const message = document.getElementById('modalMessage').value;
+
+            // Basic validation
+            if (name.trim() && email.trim() && subject.trim() && message.trim()) {
+                // Close contact modal and show success modal
+                const contactModalInstance = bootstrap.Modal.getInstance(contactModal);
+                contactModalInstance.hide();
+                
+                // Show success modal after a brief delay
+                setTimeout(() => {
+                    const successModalInstance = new bootstrap.Modal(successModal);
+                    successModalInstance.show();
+                    
+                    // Reset form
+                    contactForm.reset();
+                }, 500);
+            } else {
+                alert('Please fill in all fields before sending your message.');
+            }
+        });
+    </script>
 </body>
 </html>
