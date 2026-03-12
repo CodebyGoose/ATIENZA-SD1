@@ -125,6 +125,35 @@
             text-decoration: underline;
         }
 
+        .section-toggle {
+            width: 100%;
+            border: 3px solid var(--pink-primary);
+            border-radius: 15px;
+            padding: 20px 25px;
+            background: white;
+            color: var(--pink-primary);
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1);
+            transition: all 0.25s ease;
+            margin-bottom: 20px;
+        }
+
+        .section-toggle:hover {
+            background: #fff0f6;
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+        }
+
+        .section-toggle .toggle-icon {
+            float: right;
+            transition: transform 0.25s ease;
+        }
+
+        .section-toggle[aria-expanded="true"] .toggle-icon {
+            transform: rotate(180deg);
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
@@ -158,91 +187,192 @@
             <p>Welcome to the ATIENZA-SD2 project portfolio! This is a collection of web development sessions covering HTML, CSS, Bootstrap, and responsive design. Click on any session below to view the project.</p>
         </div>
 
-        <!-- Sessions Grid -->
-        <div class="session-grid">
-            <a href="Front End/dev-portfolio/index.html" class="session-card">
-                <div class="session-number">Developer Portfolio</div>
-                <h3>Dev Portfolio</h3>
-                <p>Portfolio</p>
-            </a>
+        <!-- Front End Section -->
+        <button class="section-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#frontendSessions" aria-expanded="false" aria-controls="frontendSessions">
+            Front End Sessions
+            <span class="toggle-icon">▼</span>
+        </button>
 
-            <a href="Front End/Session1/aboutme.txt" class="session-card">
-                <div class="session-number">1</div>
-                <h3>Session 1</h3>
-                <p>Introduction & About Me</p>
-            </a>
+        <div class="collapse" id="frontendSessions">
+            <div class="session-grid">
+                <a href="Front End/dev-portfolio/index.html" class="session-card">
+                    <div class="session-number">Developer Portfolio</div>
+                    <h3>Dev Portfolio</h3>
+                    <p>Portfolio</p>
+                </a>
 
-            <a href="Front End/Session2/activity.html" class="session-card">
-                <div class="session-number">2</div>
-                <h3>Session 2</h3>
-                <p>HTML Activity</p>
-            </a>
+                <a href="Front End/Session1/aboutme.txt" class="session-card">
+                    <div class="session-number">1</div>
+                    <h3>Session 1</h3>
+                    <p>Introduction & About Me</p>
+                </a>
 
-            <a href="Front End/Session3/Part1.html" class="session-card">
-                <div class="session-number">3</div>
-                <h3>Session 3</h3>
-                <p>Multi-Page Structure</p>
-            </a>
+                <a href="Front End/Session2/activity.html" class="session-card">
+                    <div class="session-number">2</div>
+                    <h3>Session 2</h3>
+                    <p>HTML Activity</p>
+                </a>
 
-            <a href="Front End/Session4/index.html" class="session-card">
-                <div class="session-number">4</div>
-                <h3>Session 4</h3>
-                <p>Restaurant Website</p>
-            </a>
+                <a href="Front End/Session3/Part1.html" class="session-card">
+                    <div class="session-number">3</div>
+                    <h3>Session 3</h3>
+                    <p>Multi-Page Structure</p>
+                </a>
 
-            <a href="Front End/Session5/index.html" class="session-card">
-                <div class="session-number">5</div>
-                <h3>Session 5</h3>
-                <p>CSS Styling</p>
-            </a>
+                <a href="Front End/Session4/index.html" class="session-card">
+                    <div class="session-number">4</div>
+                    <h3>Session 4</h3>
+                    <p>Restaurant Website</p>
+                </a>
 
-            <a href="Front End/Session6/index.html" class="session-card">
-                <div class="session-number">6</div>
-                <h3>Session 6</h3>
-                <p>Advanced CSS</p>
-            </a>
+                <a href="Front End/Session5/index.html" class="session-card">
+                    <div class="session-number">5</div>
+                    <h3>Session 5</h3>
+                    <p>CSS Styling</p>
+                </a>
 
-            <a href="Front End/Session7/index.html" class="session-card">
-                <div class="session-number">7</div>
-                <h3>Session 7</h3>
-                <p>Responsive Design</p>
-            </a>
+                <a href="Front End/Session6/index.html" class="session-card">
+                    <div class="session-number">6</div>
+                    <h3>Session 6</h3>
+                    <p>Advanced CSS</p>
+                </a>
 
-            <a href="Front End/Session8/index.html" class="session-card">
-                <div class="session-number">8</div>
-                <h3>Session 8</h3>
-                <p>Flex Layout</p>
-            </a>
+                <a href="Front End/Session7/index.html" class="session-card">
+                    <div class="session-number">7</div>
+                    <h3>Session 7</h3>
+                    <p>Responsive Design</p>
+                </a>
 
-            <a href="Front End/Session9/index.html" class="session-card">
-                <div class="session-number">9</div>
-                <h3>Session 9</h3>
-                <p>Grid Layout</p>
-            </a>
+                <a href="Front End/Session8/index.html" class="session-card">
+                    <div class="session-number">8</div>
+                    <h3>Session 8</h3>
+                    <p>Flex Layout</p>
+                </a>
 
-            <a href="Front End/Session10/index.html" class="session-card">
-                <div class="session-number">10</div>
-                <h3>Session 10</h3>
-                <p>Bootstrap Basics</p>
-            </a>
+                <a href="Front End/Session9/index.html" class="session-card">
+                    <div class="session-number">9</div>
+                    <h3>Session 9</h3>
+                    <p>Grid Layout</p>
+                </a>
 
-            <a href="Front End/Session11/index.html" class="session-card">
-                <div class="session-number">11</div>
-                <h3>Session 11</h3>
-                <p>Bootstrap Portfolio</p>
-            </a>
+                <a href="Front End/Session10/index.html" class="session-card">
+                    <div class="session-number">10</div>
+                    <h3>Session 10</h3>
+                    <p>Bootstrap Basics</p>
+                </a>
 
-            <a href="Front End/Session12/index.html" class="session-card">
-                <div class="session-number">12</div>
-                <h3>Session 12</h3>
-                <p>Bootstrap Portfolio</p>
-            </a>
+                <a href="Front End/Session11/index.html" class="session-card">
+                    <div class="session-number">11</div>
+                    <h3>Session 11</h3>
+                    <p>Bootstrap Portfolio</p>
+                </a>
 
-            <a href="Front End/Session13/index.html" class="session-card">
-                <div class="session-number">13</div>
-                <h3>Session 13</h3>
-                <p>Bootstrap Portfolio</p>
-            </a>
+                <a href="Front End/Session12/index.html" class="session-card">
+                    <div class="session-number">12</div>
+                    <h3>Session 12</h3>
+                    <p>Bootstrap Portfolio</p>
+                </a>
+
+                <a href="Front End/Session13/index.html" class="session-card">
+                    <div class="session-number">13</div>
+                    <h3>Session 13</h3>
+                    <p>Bootstrap Portfolio</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="section-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#backendSessions" aria-expanded="false" aria-controls="backendSessions">
+            BackEnd Sessions
+            <span class="toggle-icon">▼</span>
+        </button>
+
+        <div class="collapse" id="frontendSessions">
+            <div class="session-grid">
+                <a href="" class="session-card">
+                    <div class="session-number">Developer Portfolio</div>
+                    <h3>Dev Portfolio</h3>
+                    <p>Portfolio</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">1</div>
+                    <h3>Session 1</h3>
+                    <p>Introduction & About Me</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">2</div>
+                    <h3>Session 2</h3>
+                    <p>HTML Activity</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">3</div>
+                    <h3>Session 3</h3>
+                    <p>Multi-Page Structure</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">4</div>
+                    <h3>Session 4</h3>
+                    <p>Restaurant Website</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">5</div>
+                    <h3>Session 5</h3>
+                    <p>CSS Styling</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">6</div>
+                    <h3>Session 6</h3>
+                    <p>Advanced CSS</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">7</div>
+                    <h3>Session 7</h3>
+                    <p>Responsive Design</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">8</div>
+                    <h3>Session 8</h3>
+                    <p>Flex Layout</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">9</div>
+                    <h3>Session 9</h3>
+                    <p>Grid Layout</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">10</div>
+                    <h3>Session 10</h3>
+                    <p>Bootstrap Basics</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">11</div>
+                    <h3>Session 11</h3>
+                    <p>Bootstrap Portfolio</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">12</div>
+                    <h3>Session 12</h3>
+                    <p>Bootstrap Portfolio</p>
+                </a>
+
+                <a href="" class="session-card">
+                    <div class="session-number">13</div>
+                    <h3>Session 13</h3>
+                    <p>Bootstrap Portfolio</p>
+                </a>
+            </div>
         </div>
     </div>
 
