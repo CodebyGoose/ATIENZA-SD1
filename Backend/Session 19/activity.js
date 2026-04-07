@@ -1,6 +1,6 @@
 	// NAME 1:ATIENZA
 	// NAME 2:MAGRO
-
+	
 	/*
     1. Create a function called getCircleArea which will be able to get total area of a circle from a provided radius.
 		- a number should be provided as an argument.
@@ -16,11 +16,11 @@
 		- 4 numbers should be provided as an argument.
 		- look up the formula for calculating the average of numbers.
 		- return the result of the average calculation.
-
+		
 		Create a new variable called averageVar.
 		- This variable should be able to receive and store the result of the average calculation
 		- Log the value of the averageVar variable in the console.
-
+	
 
 	3. Create a function called checkIfPassed which will be able to check if you passed by checking the percentage of your score against the passing percentage.
 		- this function should take 2 numbers as an argument, your score and the total score.
@@ -34,26 +34,41 @@
 			-Log the value of the isPassingScore variable in the console.
         */
 
-	function getCircleArea(radius) {
-		return Math.PI * radius ** 2;
-	}
+// NUMBER 1
+let pi = 3.14159;
+let getCircleArea = function(radius) {
+    let area = pi * radius ** 2;
+    console.log("Area of the circle: " + area);
+    return area;
+}
 
-	let circleArea = getCircleArea(7);
-	console.log("Circle Area:", circleArea);
+let circleArea = getCircleArea(5);
+console.log(circleArea);
 
-	function getAverage(num1, num2, num3, num4) {
-		return (num1 + num2 + num3 + num4) / 4;
-	}
 
-	let averageVar = getAverage(90, 85, 88, 92);
-	console.log("Average:", averageVar);
+// NUMBER 2
+let getAverage = function(num1, num2, num3, num4) {
+    let average = (num1 + num2 + num3 + num4) / 4;
+    console.log("Average: " + average);
+    return average;
+}
 
-	function checkIfPassed(score, totalScore) {
-		let percentage = (score / totalScore) * 100;
-		let isPassed = percentage > 75;
-console.log("Percentage:", percentage);
-		return isPassed;
-	}
+let averageVar = getAverage(75, 90, 84, 99);
+console.log(averageVar);
 
-	let isPassingScore = checkIfPassed(38, 50);
-	console.log("PassingScore:", isPassingScore);
+
+// NUMBER 3
+function checkIfPassed(score, total) {
+    let percentage = (score / total) * 100;
+    if(percentage >= 75) {
+        console.log("Your Grade is: " + percentage + "%");
+        return true;
+    } else {
+        console.log("Your Grade is: " + percentage + "%");
+        return false;
+    }
+}
+
+let isPassingScore = checkIfPassed(85, 100);
+console.log("Remarks: ", isPassingScore);
+
